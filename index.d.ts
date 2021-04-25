@@ -1,5 +1,5 @@
 import * as fastify from "fastify"
-import { Server, IncomingMessage, ServerResponse } from "http"
+import { IncomingMessage, Server, ServerResponse } from "http"
 
 declare const requiestId: fastify.Plugin<
   Server,

@@ -13,7 +13,7 @@ afterEach(async () => {
 
 describe("X-Request-Id", () => {
   it("Add X-Request-Id header to response", async () => {
-    const id = 12345678
+    const id = "12345678"
     await fastify.register(fastifyReverseRoutes).ready()
 
     const { headers } = await fastify.inject({
